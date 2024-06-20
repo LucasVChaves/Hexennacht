@@ -1,0 +1,3 @@
+/home/lucas/metafetch/CMakeFiles/MetaFetch.dir
+/home/lucas/metafetch/CMakeFiles/edit_cache.dir
+/home/lucas/metafetch/CMakeFiles/rebuild_cache.dir
