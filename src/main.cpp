@@ -112,6 +112,7 @@ int main(int argc, char** argv) {
 
   if(optEditMetadata) {
     std::cout << "Opening metadata editor..." << std::endl;
+    //TODO
   }
 
   return 0;
