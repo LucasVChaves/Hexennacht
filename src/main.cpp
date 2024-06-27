@@ -1,6 +1,6 @@
 #include <iostream>
 #include <string>
-#include "CLI11.hpp"
+#include "../lib/CLI11.hpp" // Had to do with relative path otherwise vim would scream about it
 
 void hexdump(const std::string &file, const std::string &output_file = "") {
     std::ifstream ifs(file, std::ios::binary);
@@ -102,17 +102,19 @@ int main(int argc, char** argv) {
     std::cout << "Hexdumping " + file_path << std::endl;
     if(!output_file.empty()) std::cout << "Writing output to " << output_file << std::endl;
     hexdump(file_path, output_file);
-  }
-  
-  if(optFetchMetadata) {
+  } 
+  else if(optFetchMetadata) {
     std::cout << "Fetching metada from " + file_path << std::endl;
     if(!output_file.empty()) std::cout << "Writing output to " << output_file << std::endl;
     fetchMetadata(file_path, output_file);
-  }
-
-  if(optEditMetadata) {
+  } 
+  else if(optEditMetadata) {
     std::cout << "Opening metadata editor..." << std::endl;
-    //TODO
+    std::cout << "WIP" << std::endl;
+  } 
+  else {
+    std::cerr << "A valid option is required." << std::endl;
+    std::cout << "Try 'metafetch --help'." << std::endl;
   }
 
   return 0;

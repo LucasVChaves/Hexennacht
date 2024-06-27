@@ -224,6 +224,15 @@ MetaFetch_IS_TOP_LEVEL:STATIC=ON
 //Value Computed by CMake
 MetaFetch_SOURCE_DIR:STATIC=/home/lucas/metafetch
 
+//Value Computed by CMake
+metafetch_BINARY_DIR:STATIC=/home/lucas/metafetch
+
+//Value Computed by CMake
+metafetch_IS_TOP_LEVEL:STATIC=ON
+
+//Value Computed by CMake
+metafetch_SOURCE_DIR:STATIC=/home/lucas/metafetch
+
 
 ########################
 # INTERNAL cache entries

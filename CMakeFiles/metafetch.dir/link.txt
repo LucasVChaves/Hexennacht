@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/metafetch.dir/src/main.cpp.o -o build/metafetch 

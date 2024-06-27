@@ -63,7 +63,7 @@ CMAKE_BINARY_DIR = /home/lucas/metafetch
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/MetaFetch.dir/all
+all: CMakeFiles/metafetch.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -71,34 +71,34 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/MetaFetch.dir/clean
+clean: CMakeFiles/metafetch.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/MetaFetch.dir
+# Target rules for target CMakeFiles/metafetch.dir
 
 # All Build rule for target.
-CMakeFiles/MetaFetch.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MetaFetch.dir/build.make CMakeFiles/MetaFetch.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MetaFetch.dir/build.make CMakeFiles/MetaFetch.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/lucas/metafetch/CMakeFiles --progress-num=1,2 "Built target MetaFetch"
-.PHONY : CMakeFiles/MetaFetch.dir/all
+CMakeFiles/metafetch.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/metafetch.dir/build.make CMakeFiles/metafetch.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/metafetch.dir/build.make CMakeFiles/metafetch.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/lucas/metafetch/CMakeFiles --progress-num=1,2 "Built target metafetch"
+.PHONY : CMakeFiles/metafetch.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/MetaFetch.dir/rule: cmake_check_build_system
+CMakeFiles/metafetch.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/lucas/metafetch/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/MetaFetch.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/metafetch.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/lucas/metafetch/CMakeFiles 0
-.PHONY : CMakeFiles/MetaFetch.dir/rule
+.PHONY : CMakeFiles/metafetch.dir/rule
 
 # Convenience name for target.
-MetaFetch: CMakeFiles/MetaFetch.dir/rule
-.PHONY : MetaFetch
+metafetch: CMakeFiles/metafetch.dir/rule
+.PHONY : metafetch
 
 # clean rule for target.
-CMakeFiles/MetaFetch.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MetaFetch.dir/build.make CMakeFiles/MetaFetch.dir/clean
-.PHONY : CMakeFiles/MetaFetch.dir/clean
+CMakeFiles/metafetch.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/metafetch.dir/build.make CMakeFiles/metafetch.dir/clean
+.PHONY : CMakeFiles/metafetch.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

@@ -10,5 +10,5 @@ include_directories(lib)
 
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/build)
 
-add_executable(MetaFetch src/main.cpp)
+add_executable(metafetch src/main.cpp)
 
