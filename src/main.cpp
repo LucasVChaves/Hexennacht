@@ -2,33 +2,7 @@
 #include <string>
 #include "../lib/CLI11.hpp" // Had to do with relative path otherwise vim would scream about it
 #include "Hexdumper.hpp"
-
-void fetchMetadata(const std::string &file, const std::string &output_file = "") {
-    std::string command = "exiftool " + file;
-    std::array<char, 128> buffer;
-    std::string result;
-
-    std::shared_ptr<FILE> pipe(popen(command.c_str(), "r"), pclose);
-    if (!pipe) {
-        std::cerr << "Failed to run exiftool" << std::endl;
-        return;
-    }
-    while (fgets(buffer.data(), buffer.size(), pipe.get()) != nullptr) {
-        result += buffer.data();
-    }
-
-    if (output_file.empty()) {
-        std::cout << "Metadata for file " << file << ":\n" << result << std::endl;
-    } else {
-        std::ofstream ofs(output_file);
-        if (!ofs) {
-            std::cerr << "Failed to create output file: " << output_file << std::endl;
-            return;
-        }
-        ofs << result;
-        ofs.close();
-    }
-}
+#include "MetadataFetcher.hpp"
 
 int main(int argc, char** argv) {
     CLI::App app("Metafetch: Metadata extraction and Hexdump");
@@ -58,7 +32,8 @@ int main(int argc, char** argv) {
     else if(optFetchMetadata) {
         std::cout << "Fetching metada from " + file_path << std::endl;
         if(!output_file.empty()) std::cout << "Writing output to " << output_file << std::endl;
-        fetchMetadata(file_path, output_file);
+        MetadataFetcher metadataFetcher;
+        metadataFetcher.FetchMetadata(file_path,output_file);
     } 
     else if(optEditMetadata) {
         std::cout << "Opening metadata editor..." << std::endl;

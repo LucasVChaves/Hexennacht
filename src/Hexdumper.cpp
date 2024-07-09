@@ -1,14 +1,10 @@
 #include "Hexdumper.hpp"
 
 Hexdumper::Hexdumper() {
-    // Construtor - inicializações se necessário
     std::cout << "Hexdumper created" << std::endl;
 }
 
-Hexdumper::~Hexdumper() {
-    // Destrutor - limpezas se necessário
-    std::cout << "Hexdumper destroyed" << std::endl;
-}
+Hexdumper::~Hexdumper() {}
 
 void Hexdumper::Hexdump(const std::string &file, const std::string &output_file) {
     std::ifstream ifs(file, std::ios::binary);
