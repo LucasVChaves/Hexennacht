@@ -1,58 +1,7 @@
 #include <iostream>
 #include <string>
 #include "../lib/CLI11.hpp" // Had to do with relative path otherwise vim would scream about it
-
-void hexdump(const std::string &file, const std::string &output_file = "") {
-    std::ifstream ifs(file, std::ios::binary);
-    if (!ifs) {
-        std::cerr << "Failed to open file: " << file << std::endl;
-        return;
-    }
-
-    std::ostream *out_stream = &std::cout;
-    std::ofstream ofs;
-    if (!output_file.empty()) {
-        ofs.open(output_file, std::ios::binary);
-        if (!ofs) {
-            std::cerr << "Failed to open output file: " << output_file << std::endl;
-            return;
-        }
-        out_stream = &ofs;
-    }
-
-    char buffer[16];
-    size_t offset = 0;
-    while (ifs.read(buffer, sizeof(buffer)) || ifs.gcount() > 0) {  
-        (*out_stream) << std::setw(8) << std::setfill('0') << std::hex << offset << "  ";
-        
-        for (size_t i = 0; i < ifs.gcount(); ++i) {
-            (*out_stream) << std::setw(2) << std::setfill('0') << std::hex << (unsigned int)(unsigned char)buffer[i] << " ";
-        }
-
-        if (ifs.gcount() < 16) {
-            for (size_t i = ifs.gcount(); i < 16; ++i) {
-                (*out_stream) << "   ";
-            }
-        }
-
-        (*out_stream) << " ";
-        for (size_t i = 0; i < ifs.gcount(); ++i) {
-            char c = buffer[i];
-            if (std::isprint(c)) {
-                (*out_stream) << c;
-            } else {
-                (*out_stream) << ".";
-            }
-        }
-
-        (*out_stream) << std::endl;
-        offset += ifs.gcount();
-    }
-
-    if (ofs.is_open()) {
-        ofs.close();
-    }
-}
+#include "Hexdumper.hpp"
 
 void fetchMetadata(const std::string &file, const std::string &output_file = "") {
     std::string command = "exiftool " + file;
@@ -103,7 +52,8 @@ int main(int argc, char** argv) {
     if(optHexdump){
         std::cout << "Hexdumping " + file_path << std::endl;
         if(!output_file.empty()) std::cout << "Writing output to " << output_file << std::endl;
-        hexdump(file_path, output_file);
+        Hexdumper hexdumper;
+        hexdumper.Hexdump(file_path, output_file);
     } 
     else if(optFetchMetadata) {
         std::cout << "Fetching metada from " + file_path << std::endl;
