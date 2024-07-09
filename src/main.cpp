@@ -12,14 +12,14 @@ int main(int argc, char** argv) {
     bool optHexdump = false;
     bool optFetchMetadata = false;
     bool optEditMetadata = false;
-    bool optManipulateHex = false;
+    bool optEditHex = false;
 
     app.add_option("-F, --file", file_path, "File to process")->required()->check(CLI::ExistingFile);
     app.add_option("-o, --output", output_file, "Path to output txt file");
     app.add_flag("-d, --hexdump", optHexdump, "Performs hexdump on file");
     app.add_flag("-f, --fetch-metadata", optFetchMetadata, "Fetches the file's metadata");
     app.add_flag("-e, --edit-metadata", optEditMetadata, "Enables the metadata editor");
-    app.add_flag("-m, --hex-manipulation", optManipulateHex, "Enables hex manipulation");
+    app.add_flag("-m, --edit-hex", optEditHex, "Enables hex manipulation");
 
     CLI11_PARSE(app, argc, argv);
 
@@ -39,7 +39,7 @@ int main(int argc, char** argv) {
         std::cout << "Opening metadata editor..." << std::endl;
         std::cout << "WIP" << std::endl;
     } 
-    else if(optManipulateHex) {
+    else if(optEditHex) {
         std::cout << "Opening hex editor..." << std::endl;
         std::cout << "WIP" << std::endl;
     }
