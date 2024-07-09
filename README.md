@@ -35,7 +35,7 @@ sudo make install
 `-d / --hexdump`: Flag for Hexdump.  
 `-f / --fetch-metadata`: Flag for fetching metadata.  
 `-e / --edit-metadata`: Flag for editing metadata.  
-`-m / --hex-manipulation`: Flag for hex manipulation.
+`-m / --hex-manipulation`: Flag for hex manipulation.  
 `-o / --output`: Output path (if not provided will print on terminal).  
 `-V / --version`: Show the version of the tool.  
 `-h / --help`: Show this help message.  
