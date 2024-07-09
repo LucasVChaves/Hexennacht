@@ -9,8 +9,18 @@ A simple tool to extract and edit metadata and hex.
 - Ubuntu: `sudo apt install exiftool`
 - Arch: [Follow this tutorial](https://www.geeksforgeeks.org/installing-and-using-exiftool-on-linux/)
 
+### CMake
+- Ubuntu: `sudo apt install cmake`
+- Arch: `sudo pacman -S cmake`
+
 ## Install
-**TODO**
+```bash
+git clone https://github.com/LucasVChaves/metafetch.git
+cd metafetch
+cmake .
+make
+sudo make install
+```
 
 ## Current Features
 - [X] Hexdump
