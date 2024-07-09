@@ -17,3 +17,7 @@ add_executable(metafetch
 )
 
 target_include_directories(metafetch PUBLIC src)
+
+install(TARGETS metafetch DESTINATION bin)
+install(FILES src/Hexdumper.hpp DESTINATION include)
+install(FILES src/MetadataFetcher.hpp DESTINATION include)

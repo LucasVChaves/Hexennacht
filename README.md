@@ -3,6 +3,13 @@
 A simple tool to extract and edit metadata and hex.
 
 ## Installation
+
+### Dependencies:
+#### Exiftool:
+- Ubuntu: `sudo apt install exiftool`
+- Arch: [Follow this tutorial](https://www.geeksforgeeks.org/installing-and-using-exiftool-on-linux/)
+
+## Install
 **TODO**
 
 ## Current Features

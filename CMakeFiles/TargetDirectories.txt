@@ -1,0 +1,7 @@
+/home/lucas/Project/metafetch/CMakeFiles/metafetch.dir
+/home/lucas/Project/metafetch/CMakeFiles/edit_cache.dir
+/home/lucas/Project/metafetch/CMakeFiles/rebuild_cache.dir
+/home/lucas/Project/metafetch/CMakeFiles/list_install_components.dir
+/home/lucas/Project/metafetch/CMakeFiles/install.dir
+/home/lucas/Project/metafetch/CMakeFiles/install/local.dir
+/home/lucas/Project/metafetch/CMakeFiles/install/strip.dir

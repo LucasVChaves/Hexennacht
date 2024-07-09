@@ -1,0 +1,3 @@
+/usr/local/bin/metafetch
+/usr/local/include/Hexdumper.hpp
+/usr/local/include/MetadataFetcher.hpp
