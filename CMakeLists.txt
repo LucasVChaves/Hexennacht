@@ -14,6 +14,7 @@ add_executable(metafetch
   src/main.cpp
   src/Hexdumper.cpp
   src/MetadataFetcher.cpp
+  lib/rope/rope.c
 )
 
 target_include_directories(metafetch PUBLIC src)

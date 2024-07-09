@@ -138,7 +138,7 @@ CMakeFiles/metafetch.dir/src/main.cpp.o: \
  /usr/include/c++/14.1.1/bits/basic_ios.tcc \
  /usr/include/c++/14.1.1/bits/ostream.tcc /usr/include/c++/14.1.1/istream \
  /usr/include/c++/14.1.1/bits/istream.tcc \
- /home/lucas/Project/metafetch/src/../lib/CLI11.hpp \
+ /home/lucas/Project/metafetch/src/../lib/cli11/CLI11.hpp \
  /usr/include/c++/14.1.1/algorithm \
  /usr/include/c++/14.1.1/bits/stl_algo.h \
  /usr/include/c++/14.1.1/bits/algorithmfwd.h \

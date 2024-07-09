@@ -174,6 +174,30 @@ metafetch/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/metafetch.dir/build.make CMakeFiles/metafetch.dir/build
 .PHONY : metafetch/fast
 
+lib/rope/rope.o: lib/rope/rope.c.o
+.PHONY : lib/rope/rope.o
+
+# target to build an object file
+lib/rope/rope.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/metafetch.dir/build.make CMakeFiles/metafetch.dir/lib/rope/rope.c.o
+.PHONY : lib/rope/rope.c.o
+
+lib/rope/rope.i: lib/rope/rope.c.i
+.PHONY : lib/rope/rope.i
+
+# target to preprocess a source file
+lib/rope/rope.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/metafetch.dir/build.make CMakeFiles/metafetch.dir/lib/rope/rope.c.i
+.PHONY : lib/rope/rope.c.i
+
+lib/rope/rope.s: lib/rope/rope.c.s
+.PHONY : lib/rope/rope.s
+
+# target to generate assembly for a file
+lib/rope/rope.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/metafetch.dir/build.make CMakeFiles/metafetch.dir/lib/rope/rope.c.s
+.PHONY : lib/rope/rope.c.s
+
 src/Hexdumper.o: src/Hexdumper.cpp.o
 .PHONY : src/Hexdumper.o
 
@@ -259,6 +283,9 @@ help:
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... metafetch"
+	@echo "... lib/rope/rope.o"
+	@echo "... lib/rope/rope.i"
+	@echo "... lib/rope/rope.s"
 	@echo "... src/Hexdumper.o"
 	@echo "... src/Hexdumper.i"
 	@echo "... src/Hexdumper.s"

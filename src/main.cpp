@@ -1,6 +1,6 @@
 #include <iostream>
 #include <string>
-#include "../lib/CLI11.hpp" // Had to do with relative path otherwise vim would scream about it
+#include "../lib/cli11/CLI11.hpp" // Had to do with relative path otherwise vim would scream about it
 #include "Hexdumper.hpp"
 #include "MetadataFetcher.hpp"
 

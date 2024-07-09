@@ -1,1 +1,1 @@
-/usr/bin/c++ CMakeFiles/metafetch.dir/src/main.cpp.o CMakeFiles/metafetch.dir/src/Hexdumper.cpp.o CMakeFiles/metafetch.dir/src/MetadataFetcher.cpp.o -o build/metafetch
+/usr/bin/c++ CMakeFiles/metafetch.dir/src/main.cpp.o CMakeFiles/metafetch.dir/src/Hexdumper.cpp.o CMakeFiles/metafetch.dir/src/MetadataFetcher.cpp.o CMakeFiles/metafetch.dir/lib/rope/rope.c.o -o build/metafetch
