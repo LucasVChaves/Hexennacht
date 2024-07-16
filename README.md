@@ -1,4 +1,4 @@
-# Metafetch
+# Hexennacht
 
 A simple tool to extract and edit metadata and hex.
 
@@ -15,8 +15,8 @@ A simple tool to extract and edit metadata and hex.
 
 ## Install
 ```bash
-git clone https://github.com/LucasVChaves/metafetch.git
-cd metafetch
+git clone https://github.com/LucasVChaves/Hexennacht.git
+cd Hexennacht
 cmake .
 make
 sudo make install
@@ -73,10 +73,10 @@ VIM inspired keybindings and functions.
 
 Hexdumping a file and outputting to a file:  
 ```bash
-./metafetch -F /bin/somebinarie.o -d -o /tmp/hexdump.txt
+./hexennacht -F /bin/somebinarie.o -d -o /tmp/hexdump.txt
 ```
 
 Fetching metadata from an image and not using the output flag:  
 ```bash
-./metafetch --file /img/funnycat.png --fetch-metadata
+./hexennacht --file /img/funnycat.png --fetch-metadata
 ```

@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/lucas/Project/metafetch
+CMAKE_SOURCE_DIR = /home/lucas/Project/Hexennacht
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/lucas/Project/metafetch
+CMAKE_BINARY_DIR = /home/lucas/Project/Hexennacht
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -132,9 +132,9 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/lucas/Project/metafetch/CMakeFiles /home/lucas/Project/metafetch//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lucas/Project/Hexennacht/CMakeFiles /home/lucas/Project/Hexennacht//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/lucas/Project/metafetch/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lucas/Project/Hexennacht/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -162,24 +162,24 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named metafetch
+# Target rules for targets named hexennacht
 
 # Build rule for target.
-metafetch: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 metafetch
-.PHONY : metafetch
+hexennacht: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 hexennacht
+.PHONY : hexennacht
 
 # fast build rule for target.
-metafetch/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/metafetch.dir/build.make CMakeFiles/metafetch.dir/build
-.PHONY : metafetch/fast
+hexennacht/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hexennacht.dir/build.make CMakeFiles/hexennacht.dir/build
+.PHONY : hexennacht/fast
 
 src/Hexdumper.o: src/Hexdumper.cpp.o
 .PHONY : src/Hexdumper.o
 
 # target to build an object file
 src/Hexdumper.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/metafetch.dir/build.make CMakeFiles/metafetch.dir/src/Hexdumper.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hexennacht.dir/build.make CMakeFiles/hexennacht.dir/src/Hexdumper.cpp.o
 .PHONY : src/Hexdumper.cpp.o
 
 src/Hexdumper.i: src/Hexdumper.cpp.i
@@ -187,7 +187,7 @@ src/Hexdumper.i: src/Hexdumper.cpp.i
 
 # target to preprocess a source file
 src/Hexdumper.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/metafetch.dir/build.make CMakeFiles/metafetch.dir/src/Hexdumper.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hexennacht.dir/build.make CMakeFiles/hexennacht.dir/src/Hexdumper.cpp.i
 .PHONY : src/Hexdumper.cpp.i
 
 src/Hexdumper.s: src/Hexdumper.cpp.s
@@ -195,7 +195,7 @@ src/Hexdumper.s: src/Hexdumper.cpp.s
 
 # target to generate assembly for a file
 src/Hexdumper.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/metafetch.dir/build.make CMakeFiles/metafetch.dir/src/Hexdumper.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hexennacht.dir/build.make CMakeFiles/hexennacht.dir/src/Hexdumper.cpp.s
 .PHONY : src/Hexdumper.cpp.s
 
 src/MetadataFetcher.o: src/MetadataFetcher.cpp.o
@@ -203,7 +203,7 @@ src/MetadataFetcher.o: src/MetadataFetcher.cpp.o
 
 # target to build an object file
 src/MetadataFetcher.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/metafetch.dir/build.make CMakeFiles/metafetch.dir/src/MetadataFetcher.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hexennacht.dir/build.make CMakeFiles/hexennacht.dir/src/MetadataFetcher.cpp.o
 .PHONY : src/MetadataFetcher.cpp.o
 
 src/MetadataFetcher.i: src/MetadataFetcher.cpp.i
@@ -211,7 +211,7 @@ src/MetadataFetcher.i: src/MetadataFetcher.cpp.i
 
 # target to preprocess a source file
 src/MetadataFetcher.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/metafetch.dir/build.make CMakeFiles/metafetch.dir/src/MetadataFetcher.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hexennacht.dir/build.make CMakeFiles/hexennacht.dir/src/MetadataFetcher.cpp.i
 .PHONY : src/MetadataFetcher.cpp.i
 
 src/MetadataFetcher.s: src/MetadataFetcher.cpp.s
@@ -219,7 +219,7 @@ src/MetadataFetcher.s: src/MetadataFetcher.cpp.s
 
 # target to generate assembly for a file
 src/MetadataFetcher.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/metafetch.dir/build.make CMakeFiles/metafetch.dir/src/MetadataFetcher.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hexennacht.dir/build.make CMakeFiles/hexennacht.dir/src/MetadataFetcher.cpp.s
 .PHONY : src/MetadataFetcher.cpp.s
 
 src/main.o: src/main.cpp.o
@@ -227,7 +227,7 @@ src/main.o: src/main.cpp.o
 
 # target to build an object file
 src/main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/metafetch.dir/build.make CMakeFiles/metafetch.dir/src/main.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hexennacht.dir/build.make CMakeFiles/hexennacht.dir/src/main.cpp.o
 .PHONY : src/main.cpp.o
 
 src/main.i: src/main.cpp.i
@@ -235,7 +235,7 @@ src/main.i: src/main.cpp.i
 
 # target to preprocess a source file
 src/main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/metafetch.dir/build.make CMakeFiles/metafetch.dir/src/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hexennacht.dir/build.make CMakeFiles/hexennacht.dir/src/main.cpp.i
 .PHONY : src/main.cpp.i
 
 src/main.s: src/main.cpp.s
@@ -243,7 +243,7 @@ src/main.s: src/main.cpp.s
 
 # target to generate assembly for a file
 src/main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/metafetch.dir/build.make CMakeFiles/metafetch.dir/src/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hexennacht.dir/build.make CMakeFiles/hexennacht.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
 # Help Target
@@ -258,7 +258,7 @@ help:
 	@echo "... install/strip"
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
-	@echo "... metafetch"
+	@echo "... hexennacht"
 	@echo "... src/Hexdumper.o"
 	@echo "... src/Hexdumper.i"
 	@echo "... src/Hexdumper.s"

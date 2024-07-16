@@ -5,7 +5,7 @@
 #include "MetadataFetcher.hpp"
 
 int main(int argc, char** argv) {
-    CLI::App app("Metafetch: Metadata extraction and Hexdump");
+    CLI::App app("Hexennacht: Metadata extraction and Hexdump");
 
     std::string file_path;
     std::string output_file;
