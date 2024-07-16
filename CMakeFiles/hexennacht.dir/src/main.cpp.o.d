@@ -1,5 +1,5 @@
-CMakeFiles/metafetch.dir/src/main.cpp.o: \
- /home/lucas/Project/metafetch/src/main.cpp /usr/include/stdc-predef.h \
+CMakeFiles/hexennacht.dir/src/main.cpp.o: \
+ /home/lucas/Project/Hexennacht/src/main.cpp /usr/include/stdc-predef.h \
  /usr/include/c++/14.1.1/iostream \
  /usr/include/c++/14.1.1/bits/requires_hosted.h \
  /usr/include/c++/14.1.1/x86_64-pc-linux-gnu/bits/c++config.h \
@@ -138,7 +138,7 @@ CMakeFiles/metafetch.dir/src/main.cpp.o: \
  /usr/include/c++/14.1.1/bits/basic_ios.tcc \
  /usr/include/c++/14.1.1/bits/ostream.tcc /usr/include/c++/14.1.1/istream \
  /usr/include/c++/14.1.1/bits/istream.tcc \
- /home/lucas/Project/metafetch/src/../lib/CLI11.hpp \
+ /home/lucas/Project/Hexennacht/src/../lib/CLI11.hpp \
  /usr/include/c++/14.1.1/algorithm \
  /usr/include/c++/14.1.1/bits/stl_algo.h \
  /usr/include/c++/14.1.1/bits/algorithmfwd.h \
@@ -231,5 +231,5 @@ CMakeFiles/metafetch.dir/src/main.cpp.o: \
  /usr/include/c++/14.1.1/bits/fs_path.h /usr/include/c++/14.1.1/codecvt \
  /usr/include/c++/14.1.1/bits/fs_dir.h \
  /usr/include/c++/14.1.1/bits/fs_ops.h \
- /home/lucas/Project/metafetch/src/Hexdumper.hpp \
- /home/lucas/Project/metafetch/src/MetadataFetcher.hpp
+ /home/lucas/Project/Hexennacht/src/Hexdumper.hpp \
+ /home/lucas/Project/Hexennacht/src/MetadataFetcher.hpp

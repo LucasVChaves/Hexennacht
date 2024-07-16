@@ -1,13 +1,11 @@
 #include <iostream>
 #include <string>
-#include "../lib/cli11/CLI11.hpp" // Had to do with relative path otherwise vim would scream about it
+#include "../lib/CLI11.hpp" // Had to do with relative path otherwise vim would scream about it
 #include "Hexdumper.hpp"
 #include "MetadataFetcher.hpp"
-#include "Hexeditor.hpp"
-#include "Test.hpp"
 
 int main(int argc, char** argv) {
-    CLI::App app("Metafetch: Metadata extraction and Hexdump");
+    CLI::App app("Hexennacht: Metadata extraction and Hexdump");
 
     std::string file_path;
     std::string output_file;
@@ -42,12 +40,8 @@ int main(int argc, char** argv) {
         std::cout << "WIP" << std::endl;
     } 
     else if(optEditHex) {
-        std::cout << "Opening hex editor with file: " << file_path << std::endl;
+        std::cout << "Opening hex editor..." << std::endl;
         std::cout << "WIP" << std::endl;
-        //Hexeditor hexeditor(file_path);
-        //hexeditor.run();
-
-        HD editor(file_path);
     }
     else {
         std::cerr << "A valid option is required." << std::endl;

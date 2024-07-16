@@ -8,9 +8,9 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/lucas/Project/metafetch/src/Hexdumper.cpp" "CMakeFiles/metafetch.dir/src/Hexdumper.cpp.o" "gcc" "CMakeFiles/metafetch.dir/src/Hexdumper.cpp.o.d"
-  "/home/lucas/Project/metafetch/src/MetadataFetcher.cpp" "CMakeFiles/metafetch.dir/src/MetadataFetcher.cpp.o" "gcc" "CMakeFiles/metafetch.dir/src/MetadataFetcher.cpp.o.d"
-  "/home/lucas/Project/metafetch/src/main.cpp" "CMakeFiles/metafetch.dir/src/main.cpp.o" "gcc" "CMakeFiles/metafetch.dir/src/main.cpp.o.d"
+  "/home/lucas/Project/Hexennacht/src/Hexdumper.cpp" "CMakeFiles/hexennacht.dir/src/Hexdumper.cpp.o" "gcc" "CMakeFiles/hexennacht.dir/src/Hexdumper.cpp.o.d"
+  "/home/lucas/Project/Hexennacht/src/MetadataFetcher.cpp" "CMakeFiles/hexennacht.dir/src/MetadataFetcher.cpp.o" "gcc" "CMakeFiles/hexennacht.dir/src/MetadataFetcher.cpp.o.d"
+  "/home/lucas/Project/Hexennacht/src/main.cpp" "CMakeFiles/hexennacht.dir/src/main.cpp.o" "gcc" "CMakeFiles/hexennacht.dir/src/main.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.
