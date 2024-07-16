@@ -3,6 +3,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/metafetch.dir/lib/rope/rope.c.o.d"
   "CMakeFiles/metafetch.dir/src/Hexdumper.cpp.o"
   "CMakeFiles/metafetch.dir/src/Hexdumper.cpp.o.d"
+  "CMakeFiles/metafetch.dir/src/Hexeditor.cpp.o"
+  "CMakeFiles/metafetch.dir/src/Hexeditor.cpp.o.d"
   "CMakeFiles/metafetch.dir/src/MetadataFetcher.cpp.o"
   "CMakeFiles/metafetch.dir/src/MetadataFetcher.cpp.o.d"
   "CMakeFiles/metafetch.dir/src/main.cpp.o"

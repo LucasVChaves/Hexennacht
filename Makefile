@@ -222,6 +222,30 @@ src/Hexdumper.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/metafetch.dir/build.make CMakeFiles/metafetch.dir/src/Hexdumper.cpp.s
 .PHONY : src/Hexdumper.cpp.s
 
+src/Hexeditor.o: src/Hexeditor.cpp.o
+.PHONY : src/Hexeditor.o
+
+# target to build an object file
+src/Hexeditor.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/metafetch.dir/build.make CMakeFiles/metafetch.dir/src/Hexeditor.cpp.o
+.PHONY : src/Hexeditor.cpp.o
+
+src/Hexeditor.i: src/Hexeditor.cpp.i
+.PHONY : src/Hexeditor.i
+
+# target to preprocess a source file
+src/Hexeditor.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/metafetch.dir/build.make CMakeFiles/metafetch.dir/src/Hexeditor.cpp.i
+.PHONY : src/Hexeditor.cpp.i
+
+src/Hexeditor.s: src/Hexeditor.cpp.s
+.PHONY : src/Hexeditor.s
+
+# target to generate assembly for a file
+src/Hexeditor.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/metafetch.dir/build.make CMakeFiles/metafetch.dir/src/Hexeditor.cpp.s
+.PHONY : src/Hexeditor.cpp.s
+
 src/MetadataFetcher.o: src/MetadataFetcher.cpp.o
 .PHONY : src/MetadataFetcher.o
 
@@ -289,6 +313,9 @@ help:
 	@echo "... src/Hexdumper.o"
 	@echo "... src/Hexdumper.i"
 	@echo "... src/Hexdumper.s"
+	@echo "... src/Hexeditor.o"
+	@echo "... src/Hexeditor.i"
+	@echo "... src/Hexeditor.s"
 	@echo "... src/MetadataFetcher.o"
 	@echo "... src/MetadataFetcher.i"
 	@echo "... src/MetadataFetcher.s"

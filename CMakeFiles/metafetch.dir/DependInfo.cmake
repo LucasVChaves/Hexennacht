@@ -10,6 +10,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/lucas/Project/metafetch/lib/rope/rope.c" "CMakeFiles/metafetch.dir/lib/rope/rope.c.o" "gcc" "CMakeFiles/metafetch.dir/lib/rope/rope.c.o.d"
   "/home/lucas/Project/metafetch/src/Hexdumper.cpp" "CMakeFiles/metafetch.dir/src/Hexdumper.cpp.o" "gcc" "CMakeFiles/metafetch.dir/src/Hexdumper.cpp.o.d"
+  "/home/lucas/Project/metafetch/src/Hexeditor.cpp" "CMakeFiles/metafetch.dir/src/Hexeditor.cpp.o" "gcc" "CMakeFiles/metafetch.dir/src/Hexeditor.cpp.o.d"
   "/home/lucas/Project/metafetch/src/MetadataFetcher.cpp" "CMakeFiles/metafetch.dir/src/MetadataFetcher.cpp.o" "gcc" "CMakeFiles/metafetch.dir/src/MetadataFetcher.cpp.o.d"
   "/home/lucas/Project/metafetch/src/main.cpp" "CMakeFiles/metafetch.dir/src/main.cpp.o" "gcc" "CMakeFiles/metafetch.dir/src/main.cpp.o.d"
   )
